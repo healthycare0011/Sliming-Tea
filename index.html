@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!-- Coding By Mongrey Marma - reymr1322@gmail.com -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthy Care Order Form</title>
+  <style>
+    body {
+      background-color: White;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+  
+    #menu-button {
+      position: fixed;
+      top: 13px;
+      right: 1px;
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    #menu-button:hover {
+      background-color: #555;
+    }
+
+    #menu-content {
+      display: none;
+      position: fixed;
+      top: 50px;
+      right: 0px;
+      background-color: #F5F5DC;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      padding: 5px;
+      z-index: 1;
+    }
+
+    #menu-content a {
+      display: block;
+      padding: 15px;
+      text-decoration: none;
+      color: #333;
+      transition: background-color 0.3s;
+    }
+
+    #menu-content a:hover {
+      background-color: #f0f0f0;
+    }
+
+    header {
+      text-align: center;
+      color: LightSeaGreen;
+      margin-top: 20px;
+    }
+
+
+    form {
+      max-width: 300px;
+      margin: 20px auto;
+      background: ;
+      padding:25px
+      
+    }
+    img {
+      max-width:300px;
+      max-height:200px;
+      
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .quantity-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .quantity-btn {
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin-left: 5px;
+    }
+   input[type="submit"] {
+            background-color: LimeGreen;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: LimeGreen;
+        }
+       
+    #contact {
+            text-align: center;
+            margin: 20px;
+        }
+
+        #contact h2 {
+            color: #8cc084;
+        }
+
+        .contact-info {
+            margin-top: 10px;
+        }
+  footer {
+            background-color: ;
+            color: ;
+            text-align: center;
+            padding: 10px;
+            position: flex;
+            bottom: 0;
+            width: 100%;
+        }
+  #message-us {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #0084FF;
+            color: #fff;
+            padding: 10px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        #message-us img {
+            width: 30px; /* Adjust the size of the logo */
+            height: 30px;
+        }
+  </style>
+</head>
+<body>
+  <button id="menu-button" onclick="toggleMenu()">Menu</button>
+
+  <div id="menu-content">
+    <a href="https://healthycare0011.github.io/homepage/">Home</a>
+    <a href="https://www.facebook.com/profile.php?id=61554840383043">Facebook Page</a>
+    <a href="https://wa.me/1776762354">Whatsapp </a>
+  </div>
+
+  <header>
+    <h1>Healthy Care</h1>
+  </header>
+<form action="https://formsubmit.co/healthycare.info.bd@gmail.com" method="POST">
+  <form>
+    <img src="https://raw.githubusercontent.com/healthycare0011/photo/main/Sliming Tea.jpg" alt="" width="300px" height="200px">
+    </a>
+  </p> Product Name: Sliming Tea  
+ </p>
+  <b>Product Price: 850 ৳</b> 
+</p> 
+</p>Discription:
+ </p>
+</p>
+    <label for="quantity">Quantity:</label>
+    <div class="quantity-container">
+      <input type="number" id="quantity" name="quantity" min="1" max="100" value="1" readonly>
+      <button class="quantity-btn" onclick="decrementQuantity()">-</button>
+      <button class="quantity-btn" onclick="incrementQuantity()">+</button>
+    </div>
+<p> ১ টাকাও অগ্রিম করতে হবে না। ডেলিভারি চার্জ সম্পুর্ন ফ্রী ✅<p>
+  
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+
+    <label for="phoneNumber">Phone Number:</label>
+    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email (optional)">
+
+    <label for="district">জেলা:</label>
+    <input type="text" id="district" name="district" placeholder="Enter your district" required>
+
+    <label for="thana">থানা বা সদর:</label>
+    <input type="text" id="thana" name="thana" placeholder="Enter your thana" required>
+
+    <label for="address">বাসার এড্রেস বা যেখান থেকে প্রোডাক্ট রিসিভ করবেন</label>
+    <input type="text" id="address" name="address" placeholder="Enter your address" required>
+    
+
+    <input type="submit" value="confirm order">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://healthycare0011.github.io/orderconfirmed/">
+</p>
+</p>
+</p>⚠️ অরিজিনাল প্রোডাক্ট কিভাবে চিনবেন -
+
+✔️ প্রোডাক্টের পিছনে  কিউ আর কোডটি স্কেন করলে আপনি কোম্পানির ওয়েবসাইটে চলে আসবেন। 
+
+✔️ প্রোডাক্ট এর পিছনে অরিজিনাল বিএসটিআই সিল থাকবে।
+
+আর 
+<a href="https://elitecorpo.com/?fbclid=IwAR0C6KVS7hlioRO8dZURGjcPYpQzvoZmIKi6EjEjqaaOVQFJfwx57UmeaiI">Elitecorpo.com</a>
+এই ওয়েবসাইটে  ধুকে,প্রোডাক্টের মধ্যে একটা Code পাবেন,আর ওই Code টা দিয়ে ওয়েভসাইটে চেক করার অপশন থেকে চেক করে নিতে পারবেন,প্রোডাক্ট আসল নাকি নকল,এইটা বের হয়ে আসবে। আর Code ব্যাবহার করা যাবে ১ বার।</p>
+</form>
+
+  <script>
+    function incrementQuantity() {
+      var quantityInput = document.getElementById('quantity');
+      quantityInput.value = parseInt(quantityInput.value) + 1;
+    }
+
+    function decrementQuantity() {
+      var quantityInput = document.getElementById('quantity');
+      if (parseInt(quantityInput.value) > 1) {
+        quantityInput.value = parseInt(quantityInput.value) - 1;
+      }
+     }
+
+  </script>
+
+
+  <script>
+    function toggleMenu() {
+      var menuContent = document.getElementById('menu-content');
+      menuContent.style.display = (menuContent.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
+<div id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p>Email: healthycare.infonbd@gmail.com</p>
+            <p>Phone: +8801776762354</p>
+            <p></p>
+        </div>
+<footer>
+   &copy; 2024 Healthy Care
+    </footer>
+<a href="https://m.me/141819632357689" id="message-us" target="_blank">
+        <img src="https://raw.githubusercontent.com/healthycare0011/photo/main/facebook-messenger-icon.png" alt="Messenger Logo">
+    </a>
+
+</body>
+</html>
